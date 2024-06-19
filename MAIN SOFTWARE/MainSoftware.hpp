@@ -35,7 +35,7 @@ private:
    TestManager() = delete;
 
    static inline bool CheckForbiddenChars (const std::string& input);
-   static inline bool CheckUpperñase      (const std::string& input);
+   static inline bool CheckUppercase      (const std::string& input);
    static inline bool CheckLowercase      (const std::string& input);
    static inline bool CheckLength         (const std::string& input, const char left, const char right);
 };
@@ -48,10 +48,10 @@ private:
 std::vector <std::pair <std::string, bool>> TestManager::IsValidUsernameEx (const std::string &user_name)
 {  /* Extended version of the function: IsValidUsername(const std::string &user_name): */
    std::vector <std::pair <std::string, bool> > desription = {
-      {"Is Valid Username: ",				false},
-      {"Validate Forbidden Chars: ",	false},
-      {"Validate Uppercase: ",			false},
-      {"Validate Length: ",				false}	};
+      {"Is Valid Username: ", false},
+      {"Validate Forbidden Chars: ", false},
+      {"Validate Uppercase: ", false},
+      {"Validate Length: ", false}	};
 
    if ( user_name.empty() )
       return desription;
@@ -72,11 +72,11 @@ std::vector <std::pair <std::string, bool>> TestManager::IsValidUsernameEx (cons
 std::vector <std::pair <std::string, bool>> TestManager::IsValidPasswordEx (const std::string &password)
 {  /* Extended version of the function: IsValidPassword(const std::string &user_name): */
    std::vector <std::pair <std::string, bool> > desription = {
-      {"Is Valid Password: ",				false},
-      {"Validate Additional Chars: ",	false},
-      {"Validate Uppercase: ",			false},
-      {"Validate Lowercase: ",			false},
-      {"Validate Length: ",				false}	};
+      {"Is Valid Password: ", false},
+      {"Validate Additional Chars: ", false},
+      {"Validate Uppercase: ", false},
+      {"Validate Lowercase: ", false},
+      {"Validate Length: ", false}	};
 
    if ( password.empty() )
       return desription;
@@ -99,10 +99,10 @@ std::vector <std::pair <std::string, bool>> TestManager::IsValidPasswordEx (cons
 bool TestManager::IsValidUsername (const std::string &user_name)
 {
    std::vector <std::pair <std::string, bool> > desription = {
-      {"Is Valid Username: ",				false},
-      {"Validate Forbidden Chars: ",	false},
-      {"Validate Uppercase: ",			false},
-      {"Validate Length: ",				false}	};
+      {"Is Valid Username: ", false},
+      {"Validate Forbidden Chars: ", false},
+      {"Validate Uppercase: ", false},
+      {"Validate Length: ", false}	};
 
    if ( user_name.empty() )
       return false;
@@ -124,11 +124,11 @@ bool TestManager::IsValidUsername (const std::string &user_name)
 bool TestManager::IsValidPassword (const std::string &password)
 {
    std::vector <std::pair <std::string, bool> > desription = {
-      {"Is Valid Password: ",				false},
-      {"Validate Additional Chars: ",	false},
-      {"Validate Uppercase: ",			false},
-      {"Validate Lowercase: ",			false},
-      {"Validate Length: ",				false}	};
+      {"Is Valid Password: ", false},
+      {"Validate Additional Chars: ", false},
+      {"Validate Uppercase: ", false},
+      {"Validate Lowercase: ", false},
+      {"Validate Length: ", false}	};
 
    if ( password.empty() )
       return false;
