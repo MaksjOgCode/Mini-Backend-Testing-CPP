@@ -45,7 +45,7 @@ private:
 
 /* PUBLIC SECTION: */
 //----------------------------------------------------------------------------------------------------
-std::vector <std::pair <std::string, bool>> TestManager::IsValidUsernameEx (const std::string &user_name)
+std::vector <std::pair <std::string, bool> > TestManager::IsValidUsernameEx (const std::string &user_name)
 {  /* Extended version of the function: IsValidUsername(const std::string &user_name): */
    std::vector <std::pair <std::string, bool> > desription = {
       {"Is Valid Username: ", false},
@@ -69,7 +69,7 @@ std::vector <std::pair <std::string, bool>> TestManager::IsValidUsernameEx (cons
    return desription;
 }
 //----------------------------------------------------------------------------------------------------
-std::vector <std::pair <std::string, bool>> TestManager::IsValidPasswordEx (const std::string &password)
+std::vector <std::pair <std::string, bool> > TestManager::IsValidPasswordEx (const std::string &password)
 {  /* Extended version of the function: IsValidPassword(const std::string &user_name): */
    std::vector <std::pair <std::string, bool> > desription = {
       {"Is Valid Password: ", false},
