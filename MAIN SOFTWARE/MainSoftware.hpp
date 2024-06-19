@@ -35,7 +35,7 @@ private:
    TestManager() = delete;
 
    static inline bool CheckForbiddenChars (const std::string& input);
-   static inline bool CheckUpperñase      (const std::string& input);
+   static inline bool CheckUpperÃ±ase      (const std::string& input);
    static inline bool CheckLowercase      (const std::string& input);
    static inline bool CheckLength         (const std::string& input, const char left, const char right);
 };
@@ -57,7 +57,7 @@ std::vector <std::pair <std::string, bool>> TestManager::IsValidUsernameEx (cons
       return desription;
 
    desription[1].second = TestManager::CheckForbiddenChars  (user_name);
-   desription[2].second = TestManager::CheckUpperñase       (user_name);
+   desription[2].second = TestManager::CheckUppercase       (user_name);
    desription[3].second = TestManager::CheckLength          (user_name, 3, 16);
    if (  desription[1].second &&
          desription[2].second &&
@@ -82,7 +82,7 @@ std::vector <std::pair <std::string, bool>> TestManager::IsValidPasswordEx (cons
       return desription;
 
    desription[1].second = (  !TestManager::CheckForbiddenChars (password) );
-   desription[2].second =     TestManager::CheckUpperñase      (password);
+   desription[2].second =     TestManager::CheckUpperÃ±ase      (password);
    desription[3].second =     TestManager::CheckLowercase      (password);
    desription[4].second =     TestManager::CheckLength         (password, 8, 50);
    if (  desription[1].second &&
@@ -109,7 +109,7 @@ bool TestManager::IsValidUsername (const std::string &user_name)
 
    bool result_testing = false;
    desription[1].second = TestManager::CheckForbiddenChars  (user_name);
-   desription[2].second = TestManager::CheckUpperñase       (user_name);
+   desription[2].second = TestManager::CheckUpperÃ±ase       (user_name);
    desription[3].second = TestManager::CheckLength          (user_name, 3, 16);
    if (  desription[1].second &&
          desription[2].second &&
@@ -135,7 +135,7 @@ bool TestManager::IsValidPassword (const std::string &password)
 
    bool result_testing = false;
    desription[1].second = (  !TestManager::CheckForbiddenChars (password) );
-   desription[2].second =     TestManager::CheckUpperñase      (password);
+   desription[2].second =     TestManager::CheckUpperÃ±ase      (password);
    desription[3].second =     TestManager::CheckLowercase      (password);
    desription[4].second =     TestManager::CheckLength         (password, 8, 50);
    if (  desription[1].second &&
@@ -174,8 +174,8 @@ bool TestManager::CheckForbiddenChars(const std::string &input)
    return false;
 }
 //----------------------------------------------------------------------------------------------------
-bool TestManager::CheckUpperñase (const std::string& input)
-{	/* Check for Upperñase:			*/
+bool TestManager::CheckUpperÃ±ase (const std::string& input)
+{	/* Check for UpperÃ±ase:			*/
    if ( std::any_of(input.begin(), input.end(), [] (char c) {return std::isupper(c);}) )
       return true;
 
@@ -183,7 +183,7 @@ bool TestManager::CheckUpperñase (const std::string& input)
 }
 //----------------------------------------------------------------------------------------------------
 bool TestManager::CheckLowercase  (const std::string& input)
-{	/* Check for Lowerñase:			*/
+{	/* Check for LowerÃ±ase:			*/
    if ( std::any_of(input.begin(), input.end(), [] (char c) {return std::islower(c);}) )
       return true;
 
