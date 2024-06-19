@@ -1,6 +1,6 @@
 # Mini-Backend-Testing-CPP
 Mini-Backend-Testing-CPP is a console application written in C++ that provides a set of functions for checking the correctness of input data, such as logins and passwords. The program uses the C++ Standard Library (STL) and can be launched from the command line or run within your program's source code.
-*============================================================================================*
+*===========================================================================*
 ## MainSoftware.hpp
 The MainSoftware.hpp file contains the definition of the TestManager class, which provides a set of functions for checking the correctness of input data such as usernames and passwords. In particular, the class contains the following methods:
 * IsValidUsername(): checks if a string is a valid username;
@@ -23,14 +23,14 @@ The file also contains the definitions of the following macros:
 These macros are used to indicate the types of checks performed by the IsValidUsername() and IsValidPassword() functions.
 
 Also, if the _WIN32 or _WIN64 macro is defined, the file includes the <Windows.h> header file.
-*============================================================================================*
+*===========================================================================*
 ## MainSoftware.cpp
 This is a CPP file that includes the "MainSoftware.hpp" header file. The main function takes two arguments, argc and argv, which are used to handle command line arguments. The program expects three arguments, the first one being the program name, the second one being either "username" or "password" to indicate whether to validate a username or a password, and the third one being the value to be tested.
 
 The program first checks if the correct number of arguments have been provided. If not, it prints an error message and returns an error code. Then it checks if the second argument is either "username" or "password". If it is "username", it calls the IsValidUsername function from the TestManager class with the third argument as the username to be tested. If it is "password", it calls the IsValidPassword function from the TestManager class with the third argument as the password to be tested. If the second argument is neither "username" nor "password", it prints an error message and returns an error code.
 
 The program uses preprocessor directives to check the operating system and compiles accordingly. If the operating system is Windows, it returns EXIT_SUCCESS or EXIT_FAILURE. If the operating system is Linux, Unix, or Apple, it returns 0 or -1009. If the operating system is not supported, it prints an error message and returns -901.
-*============================================================================================*
+*===========================================================================*
 # A short guide
 argv[0] = Backend_Testing_CPP.exe
 
@@ -39,7 +39,7 @@ else if:    argv[1] == "password" (VALIDATE_PASSWORD_STR)	(VALIDATE_PASSWORD) [ 
 else:       [EXIT_FAILURE] Error input param (argv[1])
                                                                                           
 argv[2] = "The value under test"
-*============================================================================================*
+*===========================================================================*
 # The program can be run simply from the command line:
 ```
 cd Disk:\path\to\program
@@ -52,7 +52,7 @@ Here:
 * argv[1] = username
 * argv[2] = Example_User
 
-*============================================================================================*
+*===========================================================================*
 ## Here is an example of using the code written in C#:
 ```
 using System;
